@@ -1,0 +1,17 @@
+Ever wonder what that really weird UTF-8 character should look like in an OAuth signature base string or your POST body when sending a REST request?
+
+This is an index of nearly every UTF-8 character, grouped by 50 at a time, as passed through a signature base string, POST body -- as well as the unencoded POST body.
+
+The format looks like this for every group of 50:
+
+signature_base_string:
+POST&http%3A%2F%2Fapi.t%3A3000%2F1%2Fstatuses%2Fupdate.json&oauth_consumer_key%3Dkey%26oauth_nonce%3DuMBVHXpSuzyat1cO1TO9ubIqXUN9XKUG1G2cm0Sk4%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1275665813%26oauth_version%3D1.0%26status%3D%25C3%2588%25C3%2589%25C3%258A%25C3%258B%25C3%258C%25C3%258D%25C3%258E%25C3%258F%25C3%2590%25C3%2591%25C3%2592%25C3%2593%25C3%2594%25C3%2595%25C3%2596%25C3%2597%25C3%2598%25C3%2599%25C3%259A%25C3%259B%25C3%259C%25C3%259D%25C3%259E%25C3%259F%25C3%25A0%25C3%25A1%25C3%25A2%25C3%25A3%25C3%25A4%25C3%25A5%25C3%25A6%25C3%25A7%25C3%25A8%25C3%25A9%25C3%25AA%25C3%25AB%25C3%25AC%25C3%25AD%25C3%25AE%25C3%25AF%25C3%25B0%25C3%25B1%25C3%25B2%25C3%25B3%25C3%25B4%25C3%25B5%25C3%25B6%25C3%25B7%25C3%25B8%25C3%25B9
+
+body_internal:
+status=%c3%88%c3%89%c3%8a%c3%8b%c3%8c%c3%8d%c3%8e%c3%8f%c3%90%c3%91%c3%92%c3%93%c3%94%c3%95%c3%96%c3%97%c3%98%c3%99%c3%9a%c3%9b%c3%9c%c3%9d%c3%9e%c3%9f%c3%a0%c3%a1%c3%a2%c3%a3%c3%a4%c3%a5%c3%a6%c3%a7%c3%a8%c3%a9%c3%aa%c3%ab%c3%ac%c3%ad%c3%ae%c3%af%c3%b0%c3%b1%c3%b2%c3%b3%c3%b4%c3%b5%c3%b6%c3%b7%c3%b8%c3%b9
+
+body_unescaped:
+status=ÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øù
+
+-----------------------------
+
