@@ -2,6 +2,10 @@ Ever wonder what that really weird UTF-8 character should look like in an OAuth 
 
 This is an index of nearly every UTF-8 character, grouped by 50 at a time, as passed through a signature base string, POST body -- as well as the unencoded POST body.
 
+This is as the OAuth Ruby gem would parse these characters. Twitter interprets characters similarly. There may be some disparities with your own implementation.
+
+Though the example is as if setting a Twitter status, not all characters are necessarily valid in a Twitter status update.
+
 The format looks like this for every group of 50:
 
 signature_base_string:
